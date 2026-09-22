@@ -31,4 +31,19 @@ Items
 Location 
 Notification
 Robots
+#API
+POST /auth/ register  ---> user-Id
+{ name, email , password}
+POST/User/login --->token{
+email, password
+}
+Get/ Items ---> Items[]{id_items  , name,  price }
+Post/Items/ ---> item_id {Name ,price , size , weight }
+PATCH/Cart/  ---> 200{}
+POST/Orders --->OrderId{ id_items []  , location_user }
+Get / Order/order_id---> { order_location}
+Get/order/ {order id}/ --->id_items []{}
+Post/order/ {order id}/ user--->409{order_Id}
+Post /Robots/{robot_id} → 200     {item_id}
 
+ 
