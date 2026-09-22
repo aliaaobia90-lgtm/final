@@ -18,4 +18,17 @@ The system sends pick tasks to the assigned robots and follows their progress
 system must handle robot failures 
  if order is fully collected he system moves the order to the packing station and then to shipping
  system notifies operators about  low stock, a robot failure, a delayed order, or a robot with a low battery
+#Non-Functional
+#
+1. low latency : system must process validation the order with rsponse time of 100ms at least 98% of request 
+2.   strong consistency : strict ACID in   complain immediate database replacementare required for  validation the order
+
+3. eventaul consistency : asyncrounce  synchronization is allowed for decide robot that select  within maximum windows of4 secondsc to priotize  high avialbiltiy and read speed
+#Core Entities
+#User
+Order
+Items
+Location 
+Notification
+Robots
 
